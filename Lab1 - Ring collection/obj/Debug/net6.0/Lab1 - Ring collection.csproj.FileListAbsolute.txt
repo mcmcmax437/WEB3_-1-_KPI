@@ -1,0 +1,15 @@
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\bin\Debug\net6.0\Lab1 - Ring collection.exe
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\bin\Debug\net6.0\Lab1 - Ring collection.deps.json
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\bin\Debug\net6.0\Lab1 - Ring collection.runtimeconfig.json
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\bin\Debug\net6.0\Lab1 - Ring collection.dll
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\bin\Debug\net6.0\Lab1 - Ring collection.pdb
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\obj\Debug\net6.0\Lab1 - Ring collection.csproj.AssemblyReference.cache
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\obj\Debug\net6.0\Lab1 - Ring collection.GeneratedMSBuildEditorConfig.editorconfig
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\obj\Debug\net6.0\Lab1 - Ring collection.AssemblyInfoInputs.cache
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\obj\Debug\net6.0\Lab1 - Ring collection.AssemblyInfo.cs
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\obj\Debug\net6.0\Lab1 - Ring collection.csproj.CoreCompileInputs.cache
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\obj\Debug\net6.0\Lab1 - Ring collection.dll
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\obj\Debug\net6.0\refint\Lab1 - Ring collection.dll
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\obj\Debug\net6.0\Lab1 - Ring collection.pdb
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\obj\Debug\net6.0\Lab1 - Ring collection.genruntimeconfig.cache
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\obj\Debug\net6.0\ref\Lab1 - Ring collection.dll
