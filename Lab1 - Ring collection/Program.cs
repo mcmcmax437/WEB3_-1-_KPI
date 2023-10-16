@@ -7,30 +7,32 @@ class Program
 {
     static void Main()
     {
-        RingCollection<int> ring = new RingCollection<int>(5);
+        CircularLinkedList<int> circularList = new CircularLinkedList<int>();
 
-        ring.Add(1);
-        ring.Add(2);
-        ring.Add(3);
-        ring.Add(5);
-        ring.Add(-2);
-        ring.Add(100);
-        ring.Add(0);
+        circularList.Add(1);
+        circularList.Add(2);
+        circularList.Add(3);
+        circularList.Add(5);
+        circularList.Add(-2);
+        circularList.Add(100);
+        circularList.Add(0);
 
-        bool isRing = ring.IsRingCollection();
-        Console.WriteLine("Is it a ring collection? " + isRing);
+        circularList.Print();
+        bool isCircularList = circularList.IsCircularList();
+        Console.WriteLine("Is it circular Linked List? " + isCircularList);
+      
+        circularList.Delete(0);
+        circularList.Print();
+        isCircularList = circularList.IsCircularList();
+        Console.WriteLine("Is it circular Linked List? " + isCircularList);
 
-        /*
-        ring.Delete();
-        isRing = ring.IsRingCollection();
-        Console.WriteLine("Is it a ring collection after dequeue? " + isRing); 
-        ring.Add(4);
-        ring.Add(5);
-        isRing = ring.IsRingCollection();
-        Console.WriteLine("Is it a ring collection after filling the buffer? " + isRing); 
-        ring.Add(6);
-        isRing = ring.IsRingCollection();
-        Console.WriteLine("Is it a ring collection after overwriting? " + isRing); 
-       */
+        circularList.Add(666);
+        circularList.Add(843);
+        circularList.Print();
+        isCircularList = circularList.IsCircularList();
+        Console.WriteLine("Is it circular Linked List? " + isCircularList);
+
+
     }
 }
+
