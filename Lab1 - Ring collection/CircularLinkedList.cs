@@ -19,7 +19,7 @@ namespace Lab1___Ring_collection
 
         public bool IsCircularList()
         {
-            if (count == 0)
+            if (count == 0 || count == 1)
                 return false;
 
             Node current = head;
@@ -27,10 +27,12 @@ namespace Lab1___Ring_collection
             {
                 if (current == null || current.Next == null)
                     return false;
+                if (current.Next == head)
+                    return true;
                 current = current.Next;
             }
 
-            return current == head; 
+            return false;
         }
 
         public void Add(T item)

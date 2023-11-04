@@ -13,4 +13,11 @@
     <SourceRoot Include="C:\Users\mcmcm\.nuget\packages\" />
     <SourceRoot Include="C:\Code\Общие компоненты, инструменты и пакеты SDK\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)nunit\3.13.3\build\NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit\3.13.3\build\NUnit.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codecoverage\17.9.0-preview-23503-02\build\netstandard2.0\Microsoft.CodeCoverage.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codecoverage\17.9.0-preview-23503-02\build\netstandard2.0\Microsoft.CodeCoverage.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNUnit_ConsoleRunner Condition=" '$(PkgNUnit_ConsoleRunner)' == '' ">C:\Users\mcmcm\.nuget\packages\nunit.consolerunner\3.16.3</PkgNUnit_ConsoleRunner>
+  </PropertyGroup>
 </Project>
