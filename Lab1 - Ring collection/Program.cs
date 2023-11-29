@@ -32,6 +32,33 @@ class Program
         isCircularList = circularList.IsCircularList();
         Console.WriteLine("Is it circular Linked List? " + isCircularList);
 
+        Console.WriteLine("-------------------------------------------");
+
+        CircularLinkedList<string> circularList2 = new CircularLinkedList<string>();
+
+        circularList2.Add("2");
+        circularList2.Add("3");
+        circularList2.Add("32");
+        circularList2.Add("adw");
+        circularList2.Add("apple");
+        circularList2.Add("hundred");
+        circularList2.Add("trousers");
+
+        circularList2.Print();
+        bool isCircularList2 = circularList2.IsCircularList();
+        Console.WriteLine("Is it circular Linked List? " + isCircularList2);
+
+        circularList2.Delete("adw");
+        circularList2.Print();
+        isCircularList = circularList2.IsCircularList();
+        Console.WriteLine("Is it circular Linked List? " + isCircularList2);
+
+        circularList2.Add("###");
+        circularList2.Add("0asd2");
+        circularList2.Print();
+        isCircularList = circularList2.IsCircularList();
+        Console.WriteLine("Is it circular Linked List? " + isCircularList2);
+
 
     }
 }
