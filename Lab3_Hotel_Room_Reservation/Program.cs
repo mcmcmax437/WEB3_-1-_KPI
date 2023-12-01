@@ -11,6 +11,8 @@ namespace Lab3_Hotel_Room_Reservation
     {
          static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+
             Menu.StartMainMenu();
         }
     }

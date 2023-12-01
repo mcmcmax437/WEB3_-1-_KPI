@@ -40,7 +40,7 @@ namespace Hotel_PL
                             break;
                         case 2:
                             Console.Clear();
-                            Console.WriteLine("Не туди");
+                            Console.WriteLine("І Не туди");
                             Console.ReadKey();
                             Console.Clear();
                             break;
@@ -65,7 +65,7 @@ namespace Hotel_PL
                 {
                    // Console.Clear();
                     Console.WriteLine(e.Message);
-                    Console.WriteLine("Press any key to return to Main Menu");
+                    Console.WriteLine("Натисни кнопку для повернення до Головного Меню");
                     Console.ReadKey();
                 }
             }
