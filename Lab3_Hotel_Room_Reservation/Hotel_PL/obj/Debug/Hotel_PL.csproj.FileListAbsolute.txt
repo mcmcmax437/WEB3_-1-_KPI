@@ -1,6 +1,0 @@
-D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation\Hotel_PL\bin\Debug\Hotel_PL.dll
-D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation\Hotel_PL\bin\Debug\Hotel_PL.pdb
-D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation\Hotel_PL\obj\Debug\Hotel_PL.csproj.AssemblyReference.cache
-D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation\Hotel_PL\obj\Debug\Hotel_PL.csproj.CoreCompileInputs.cache
-D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation\Hotel_PL\obj\Debug\Hotel_PL.dll
-D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation\Hotel_PL\obj\Debug\Hotel_PL.pdb

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "uS9Y5ThZSAt01zoDRgHN+3xa4Ex2dNeqvk+24d+B6dcY29HbqcxoGuQte/7L1Hj94u0Hbomf6w6eKak6IvdLvw==",
+  "success": true,
+  "projectFilePath": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service\\Lab3_Hotel_Room_Reservation_Service\\Lab3_Hotel_Room_Reservation_Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mcmcm\\.nuget\\packages\\baselibs\\1.6.4.382\\baselibs.1.6.4.382.nupkg.sha512",
+    "C:\\Users\\mcmcm\\.nuget\\packages\\microsoft.codecoverage\\17.9.0-preview-23531-01\\microsoft.codecoverage.17.9.0-preview-23531-01.nupkg.sha512",
+    "C:\\Users\\mcmcm\\.nuget\\packages\\microsoft.net.test.sdk\\17.9.0-preview-23531-01\\microsoft.net.test.sdk.17.9.0-preview-23531-01.nupkg.sha512",
+    "C:\\Users\\mcmcm\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.9.0-preview-23531-01\\microsoft.testplatform.objectmodel.17.9.0-preview-23531-01.nupkg.sha512",
+    "C:\\Users\\mcmcm\\.nuget\\packages\\microsoft.testplatform.testhost\\17.9.0-preview-23531-01\\microsoft.testplatform.testhost.17.9.0-preview-23531-01.nupkg.sha512",
+    "C:\\Users\\mcmcm\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\mcmcm\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
