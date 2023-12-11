@@ -12,6 +12,7 @@ namespace Hotel_DAL.Interfaces
         IEnumerable<Room> GetAllRooms(); 
         Room GetRoomById(int id); 
         void UpdateRoom(Room room); 
+        void AddRoom(Room room);
         void Save(); 
     }
 }

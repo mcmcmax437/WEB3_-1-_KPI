@@ -37,7 +37,21 @@ namespace Hotel_BAL.Interface_Implementation
             roomRepository.UpdateRoom(room);
         }
 
-     
+        public void AddRoom(Room room)
+        {          
+            var existingRoom = roomRepository.GetAllRooms().FirstOrDefault(r => r.Name == room.Name);
+
+            if (existingRoom == null)
+            {          
+                roomRepository.AddRoom(room);
+                roomRepository.Save();
+            }
+            else
+            {              
+                Console.WriteLine($"Room with name {room.Name} already exists.");
+            }
+        }
+
         public void Save()
         {
             roomRepository.Save();

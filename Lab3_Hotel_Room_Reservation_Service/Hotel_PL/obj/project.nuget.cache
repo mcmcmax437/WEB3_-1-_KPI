@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BSzEr/DQP8UWaISkaNi1HFIWK/kuO/1yXr0Y9Qy+A5b1iWjC1z4N9lPAVuscJdu3rSqL4Sewfy8R5Y7SAXrq4g==",
+  "dgSpecHash": "mBLRUqWaXAF0fQNnMyoKDO0V3zPGloNlFV3OY+nwYTYlSTpI4gDGBPzl/3wUETCMoRUZynTZ045XCoVSuwKoxQ==",
   "success": true,
-  "projectFilePath": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service – копія\\Hotel_PL\\Hotel_PL.csproj",
+  "projectFilePath": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service\\Hotel_PL\\Hotel_PL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mcmcm\\.nuget\\packages\\baselibs\\1.6.4.382\\baselibs.1.6.4.382.nupkg.sha512",
     "C:\\Users\\mcmcm\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",

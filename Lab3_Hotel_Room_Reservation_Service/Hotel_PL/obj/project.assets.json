@@ -3164,11 +3164,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service – копія\\Hotel_PL\\Hotel_PL.csproj",
+      "projectUniqueName": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service\\Hotel_PL\\Hotel_PL.csproj",
       "projectName": "Hotel_PL",
-      "projectPath": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service – копія\\Hotel_PL\\Hotel_PL.csproj",
+      "projectPath": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service\\Hotel_PL\\Hotel_PL.csproj",
       "packagesPath": "C:\\Users\\mcmcm\\.nuget\\packages\\",
-      "outputPath": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service – копія\\Hotel_PL\\obj\\",
+      "outputPath": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service\\Hotel_PL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Code\\Общие компоненты, инструменты и пакеты SDK\\NuGetPackages"
@@ -3189,8 +3189,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service – копія\\Hotel_BAL\\Hotel_BAL.csproj": {
-              "projectPath": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service – копія\\Hotel_BAL\\Hotel_BAL.csproj"
+            "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service\\Hotel_BAL\\Hotel_BAL.csproj": {
+              "projectPath": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service\\Hotel_BAL\\Hotel_BAL.csproj"
             }
           }
         }

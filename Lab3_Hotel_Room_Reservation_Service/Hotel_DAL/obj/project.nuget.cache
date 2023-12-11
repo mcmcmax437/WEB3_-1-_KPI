@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nNJLRnjSapml5yWfXzALoxZnHJmfenkh+VcQOtN1YmgOi1Uve3RmN7qnZvjpip2ROLXYgyt3pIskf82JhgBemw==",
+  "dgSpecHash": "zXVX8UphEBmE4wgOC1SN3xapLVX0OS9+UemOTT+Xd9LYn90ROmMnIoQorOD1/MPZpVGVT4fpglTE5wBD7P70bw==",
   "success": true,
-  "projectFilePath": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service – копія\\Hotel_DAL\\Hotel_DAL.csproj",
+  "projectFilePath": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service\\Hotel_DAL\\Hotel_DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mcmcm\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\mcmcm\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

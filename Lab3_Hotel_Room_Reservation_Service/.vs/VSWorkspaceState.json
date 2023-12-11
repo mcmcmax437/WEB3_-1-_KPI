@@ -3,9 +3,8 @@
     "",
     "\\Hotel_DAL",
     "\\Hotel_PL",
-    "\\Hotel_PL_Access",
     "\\Lab3_Hotel_Room_Reservation_Service"
   ],
-  "SelectedNode": "\\Hotel_DAL\\Hotel_DAL.csproj",
+  "SelectedNode": "\\Lab3_Hotel_Room_Reservation_Service\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

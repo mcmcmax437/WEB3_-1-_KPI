@@ -33,6 +33,12 @@ namespace Hotel_DAL.Interface_Imlementation
             context.Entry(room).State = EntityState.Modified;
         }
 
+        public void AddRoom(Room room)
+        {                          
+                context.Entry(room).State = EntityState.Added;
+                context.SaveChanges();
+        }
+
 
 
         public void Save()

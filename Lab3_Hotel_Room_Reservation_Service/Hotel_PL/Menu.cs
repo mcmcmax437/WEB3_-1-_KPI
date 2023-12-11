@@ -25,8 +25,6 @@ namespace Hotel_PL
                 var roomService = new RoomService(new RoomRepository(context));
                 var bookingService = new BookingService(new BookingRepository(context));
 
-                // var hotel = new Hotel(context);
-
                 Console.WriteLine("Welcome to Hotel Booking System");
                 while (exit == false)
                 {
@@ -48,26 +46,22 @@ namespace Hotel_PL
                             ViewAvailableRooms(roomService);
                             break;
                         case "2":
-                            // Book a room
                             BookRoom(roomService, bookingService);
                             break;
-                        case "3":
-                            // View booked rooms
+                        case "3":                         
                             ViewBookedRooms(bookingService);
                             break;
                         case "4":
-                            // AddRoom(hotel);
+                            AddNewRoom(roomService);
                             break;
                         case "5":
-                            // CancelReservation(roomService, bookingService);
+                             CancelReservation(roomService, bookingService);
                             break;
-                        case "6":
-                            // Exit
+                        case "6":                        
                             Console.WriteLine("Thank you for using Hotel Booking System");
                             exit = true;
                             break;
-                        default:
-                            // Invalid input
+                        default:                      
                             Console.WriteLine("Invalid option");
                             break;
                     }
@@ -75,17 +69,17 @@ namespace Hotel_PL
             }
         }
 
-        // Method to view available rooms and prices
+     
         public static void ViewAvailableRooms(IRoomService roomService)
         {
-            // Get all rooms
+           
             var rooms = roomService.GetAllRooms();
 
-            // Display room details
+           
             Console.WriteLine("Available rooms and prices:");
             foreach (var room in rooms)
             {
-                if (room.Available) // Only show available rooms
+                if (room.Available) 
                 {
                     Console.WriteLine($"Room {room.Name}, Type: {room.Type}, Price: {room.Price}");
                 }
@@ -171,7 +165,7 @@ namespace Hotel_PL
         }
 
 
-        /*
+        
         public static void AddNewRoom(IRoomService roomService)
         {
             Console.WriteLine("Please enter the room details:");
@@ -182,20 +176,21 @@ namespace Hotel_PL
             Console.WriteLine("Room Price per Night:");
             var roomPrice = decimal.Parse(Console.ReadLine());
 
-            // Create a new room object
+         
             var newRoom = new Room
             {
                 Name = roomName,
                 Type = roomType,
                 Price = roomPrice,
                 Available = true
-            };
+            };       
+           // var existingRoom = roomService.GetRoomById(newRoom.Id);
+         
+                roomService.AddRoom(newRoom);
+                roomService.Save();
 
-            // Add the new room to the database
-            roomService.UpdateRoom(newRoom);
-            roomService.Save();
+                Console.WriteLine($"New room added successfully: Room {newRoom.Name}, Type: {newRoom.Type}, Price: {newRoom.Price}");
 
-            Console.WriteLine($"New room added successfully: Room {newRoom.Name}, Type: {newRoom.Type}, Price: {newRoom.Price}");
         }
         public static void CancelReservation(IRoomService roomService, IBookingService bookingService)
         {
@@ -224,7 +219,7 @@ namespace Hotel_PL
                 Console.WriteLine("Invalid booking ID. No reservation found.");
             }
         }
-        */
+        
     }
 }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AMhRCqfMFgoHfFvOv7WsVIFxWcoQXIdc9tTkomZcOcqvCeXlFylZ4Np8IAYtMjpVZQWaGJCksL/g03d6fp1aQw==",
+  "dgSpecHash": "5WHd0Dh4Osk3ue9YtXCFJbATZnUxyeTA4DMLJSJpJ9MLsF8DpMTH4W3amy4UG/MMJYWFBlmVDMtEr+v/pD5U0A==",
   "success": true,
-  "projectFilePath": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service – копія\\Hotel_BAL\\Hotel_BAL.csproj",
+  "projectFilePath": "D:\\Labs\\WEB3_-1-_KPI\\Lab3_Hotel_Room_Reservation_Service\\Hotel_BAL\\Hotel_BAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mcmcm\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\mcmcm\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
