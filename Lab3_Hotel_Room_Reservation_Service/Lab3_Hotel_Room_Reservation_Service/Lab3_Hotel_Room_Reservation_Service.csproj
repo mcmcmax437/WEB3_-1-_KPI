@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="BaseLibS" Version="1.6.4.382" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0-preview-23531-01" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.21" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 

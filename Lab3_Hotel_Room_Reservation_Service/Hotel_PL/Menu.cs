@@ -1,9 +1,14 @@
-﻿using System;
+﻿using Hotel_BAL;
+using Hotel_BAL.Interface_Implementation;
+using Hotel_DAL.Interface_Imlementation;
+using Hotel_DAL;
+using Hotel_DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Hotel_PL_Access;
+using Hotel_BAL.Interfaces;
 
 namespace Hotel_PL
 {
@@ -11,173 +16,216 @@ namespace Hotel_PL
     {
         public static void StartMainMenu()
         {
-            General_Methods.Check_DB_Files();
 
-            ConsoleKey key;
-            bool exit = false;
-
-            
-
-            while (exit == false)
+            using (var context = new HotelContext())
             {
-                Console.Clear();
-                Console.WriteLine(Print_Menu.Print_MainMenu());
-                key = General_Methods.SelectKey();
+                bool exit = false;
+                context.Database.EnsureCreated();
 
-                try
+                var roomService = new RoomService(new RoomRepository(context));
+                var bookingService = new BookingService(new BookingRepository(context));
+
+                // var hotel = new Hotel(context);
+
+                Console.WriteLine("Welcome to Hotel Booking System");
+                while (exit == false)
                 {
-                    switch (key)
+                    Console.WriteLine("-------------------------------");
+                    Console.WriteLine("Please choose an option:");
+                    Console.WriteLine("1. View available rooms and prices");
+                    Console.WriteLine("2. Book a room");
+                    Console.WriteLine("3. View booked rooms");
+                    Console.WriteLine("4. Add new room");
+                    Console.WriteLine("5. Cancele reservation");
+                    Console.WriteLine("6. Exit");
+
+                    var input = Console.ReadLine();
+
+                    switch (input)
                     {
-                        //Меню Готеля
-                        case ConsoleKey.D1:
-            hotel_anchor:
-
-                            Console.Clear();
-                            Console.WriteLine(Print_Menu.Hotel_Menu());
-
-                            key = General_Methods.SelectKey();
-
-                            switch (key)
-                            {
-
-                                //Створити
-                                case ConsoleKey.D1:
-                                    Console.Clear();
-                                    Action_with_Hotel.Add_Hotel();
-                                    break;
-
-                                //Видалити
-                                case ConsoleKey.D2:
-                                    Action_with_Hotel.Remove_Hotel();
-                                    break;
-
-                                //Інформація про готелі
-                                case ConsoleKey.D3:
-                                    Console.Clear();
-                                    Action_with_Hotel.Show_Hotels(key);
-                                    Console.WriteLine("Натисни будь яку кнопку для повернення до Головного Меню");
-                                    Console.ReadKey();
-
-                                    break;
-
-                                //Інформація про конкретний готель
-                                case ConsoleKey.D4:
-                                    Action_with_Hotel.Show_specific_Hotel();
-                                    break;
-
-
-                                case ConsoleKey.D5:
-                                    Console.Clear();
-                                    Action_with_Hotel.Show_Hotels(ConsoleKey.D4);
-                                    Console.WriteLine("Натисни будь яку кнопку для повернення до Головного Меню");
-                                    Console.ReadKey();
-                                    break;
-
-                                case ConsoleKey.R:
-                                    break;
-
-                                default: goto hotel_anchor;
-                            }
+                        case "1":
+                            // View available rooms and prices
+                            ViewAvailableRooms(roomService);
                             break;
-
-                        //Меню Клієнтів
-                        case ConsoleKey.D2:
-            client_anchor:
-
-                            Console.Clear();
-                            Console.WriteLine(Print_Menu.Visitors_Menu());
-
-                            key = General_Methods.SelectKey();
-
-                            switch (key)
-                            {
-                                case ConsoleKey.D1:
-                                    break;
-                                case ConsoleKey.D2:
-                                    break;
-                                case ConsoleKey.D3:
-                                    break;
-                                case ConsoleKey.D4:
-                                    break;
-                                case ConsoleKey.D5:
-                                    break;
-                                case ConsoleKey.R:
-                                    break;
-
-                                default: goto client_anchor;
-                            }
+                        case "2":
+                            // Book a room
+                            BookRoom(roomService, bookingService);
                             break;
-
-                        //Меню Кімнат
-                        case ConsoleKey.D3:
-            room_anchor:
-                            Console.Clear();
-                            Console.WriteLine(Print_Menu.Room_Menu());
-
-                            key = General_Methods.SelectKey();
-
-                            switch (key)
-                            {
-                                case ConsoleKey.D1:
-                                    break;
-                                case ConsoleKey.D2:
-                                    break;
-                                case ConsoleKey.D3:
-                                    break;
-                                case ConsoleKey.D4:
-                                    break;
-                                case ConsoleKey.D5:
-                                    break;
-                                case ConsoleKey.R:
-                                    break;
-
-                                default: goto room_anchor;
-                            }
+                        case "3":
+                            // View booked rooms
+                            ViewBookedRooms(bookingService);
                             break;
-
-                        //Меню Пошуку
-                        case ConsoleKey.D4:
-            search_anchor:
-
-                            Console.Clear();
-                            Console.WriteLine(Print_Menu.Search_Menu());
-
-                            key = General_Methods.SelectKey();
-
-                            switch (key)
-                            {
-                                case ConsoleKey.D1:
-                                    break;
-                                case ConsoleKey.D2:
-                                    break;
-                                case ConsoleKey.D3:
-                                    break;
-                                case ConsoleKey.D4:
-                                    break;
-                                case ConsoleKey.D5:
-                                    break;
-                                case ConsoleKey.R:
-                                    break;
-
-                                default: goto search_anchor;
-                            }
+                        case "4":
+                            // AddRoom(hotel);
                             break;
-
-                        case ConsoleKey.D5:
+                        case "5":
+                            // CancelReservation(roomService, bookingService);
+                            break;
+                        case "6":
+                            // Exit
+                            Console.WriteLine("Thank you for using Hotel Booking System");
                             exit = true;
-                            return;
+                            break;
+                        default:
+                            // Invalid input
+                            Console.WriteLine("Invalid option");
+                            break;
                     }
-
-                }
-                catch (Exception e)
-                {
-                    Console.Clear();
-                    Console.WriteLine(e.Message);
-                    Console.WriteLine("Натисни кнопку для повернення до Головного Меню");
-                    Console.ReadKey();
                 }
             }
         }
+
+        // Method to view available rooms and prices
+        public static void ViewAvailableRooms(IRoomService roomService)
+        {
+            // Get all rooms
+            var rooms = roomService.GetAllRooms();
+
+            // Display room details
+            Console.WriteLine("Available rooms and prices:");
+            foreach (var room in rooms)
+            {
+                if (room.Available) // Only show available rooms
+                {
+                    Console.WriteLine($"Room {room.Name}, Type: {room.Type}, Price: {room.Price}");
+                }
+            }
+        }
+
+
+        public static void ViewBookedRooms(IBookingService bookingService)
+        {
+            // Get all bookings
+            var bookings = bookingService.GetAllBookings();
+
+            // Display booking details
+            Console.WriteLine("Booked rooms:");
+            foreach (var booking in bookings)
+            {
+                Console.WriteLine($"Room {booking.Room.Name}, Customer: {booking.CustomerName}, Check-in: {booking.CheckIn}, Check-out: {booking.CheckOut}");
+            }
+        }
+
+        public static void BookRoom(IRoomService roomService, IBookingService bookingService)
+        {
+            // Get the available rooms and prices
+            var rooms = roomService.GetAllRooms().Where(r => r.Available).ToList();
+
+            // Check if there are any available rooms
+            if (rooms.Count > 0)
+            {
+                // Display the available rooms and prices
+                Console.WriteLine("Available rooms and prices:");
+                foreach (var room in rooms)
+                {
+                    Console.WriteLine($"Room {room.Name}, Type: {room.Type}, Price: {room.Price}");
+                }
+
+                // Prompt the user to enter the booking details
+                Console.WriteLine("Please enter the room name:");
+                var roomName = Console.ReadLine();
+                Console.WriteLine("Please enter the customer name:");
+                var customerName = Console.ReadLine();
+                Console.WriteLine("Please enter the check-in date (yyyy-mm-dd):");
+                var checkIn = DateTime.Parse(Console.ReadLine());
+                Console.WriteLine("Please enter the check-out date (yyyy-mm-dd):");
+                var checkOut = DateTime.Parse(Console.ReadLine());
+
+                // Validate the input
+                if (checkOut > checkIn && rooms.Any(r => r.Name == roomName))
+                {
+                    // Create a new booking object
+                    var booking = new Booking
+                    {
+                        RoomId = rooms.First(r => r.Name == roomName).Id,
+                        CustomerName = customerName,
+                        CheckIn = checkIn,
+                        CheckOut = checkOut
+                    };
+
+                    // Add the booking to the database
+                    bookingService.AddBooking(booking);
+                    bookingService.Save();
+
+                    // Update the room availability
+                    var room = roomService.GetRoomById(booking.RoomId);
+                    room.Available = false;
+                    roomService.UpdateRoom(room);
+                    roomService.Save();
+
+                    // Display the booking confirmation
+                    Console.WriteLine("Booking confirmed:");
+                    Console.WriteLine($"Room {booking.Room.Name}, Customer: {booking.CustomerName}, Check-in: {booking.CheckIn}, Check-out: {booking.CheckOut}");
+                }
+                else
+                {
+                    // Display the error message
+                    Console.WriteLine("Invalid input");
+                }
+            }
+            else
+            {
+                // Display the message that there are no available rooms
+                Console.WriteLine("No rooms available");
+            }
+        }
+
+
+        /*
+        public static void AddNewRoom(IRoomService roomService)
+        {
+            Console.WriteLine("Please enter the room details:");
+            Console.WriteLine("Room Name:");
+            var roomName = Console.ReadLine();
+            Console.WriteLine("Room Type (Single/Double/Suite):");
+            var roomType = Console.ReadLine();
+            Console.WriteLine("Room Price per Night:");
+            var roomPrice = decimal.Parse(Console.ReadLine());
+
+            // Create a new room object
+            var newRoom = new Room
+            {
+                Name = roomName,
+                Type = roomType,
+                Price = roomPrice,
+                Available = true
+            };
+
+            // Add the new room to the database
+            roomService.UpdateRoom(newRoom);
+            roomService.Save();
+
+            Console.WriteLine($"New room added successfully: Room {newRoom.Name}, Type: {newRoom.Type}, Price: {newRoom.Price}");
+        }
+        public static void CancelReservation(IRoomService roomService, IBookingService bookingService)
+        {
+            Console.WriteLine("Please enter the booking ID to cancel:");
+            var bookingId = int.Parse(Console.ReadLine());
+
+            // Get the booking by ID
+            var booking = bookingService.GetBookingById(bookingId);
+
+            if (booking != null)
+            {
+                // Update the room availability
+                var room = roomService.GetRoomById(booking.RoomId);
+                room.Available = true;
+                roomService.UpdateRoom(room);
+                roomService.Save();
+
+                // Delete the booking from the database
+                bookingService.DeleteBooking(bookingId);
+                bookingService.Save();
+
+                Console.WriteLine("Reservation canceled successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Invalid booking ID. No reservation found.");
+            }
+        }
+        */
     }
 }
+
 

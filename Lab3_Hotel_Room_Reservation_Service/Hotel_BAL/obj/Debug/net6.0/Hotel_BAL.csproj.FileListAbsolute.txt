@@ -1,0 +1,17 @@
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\bin\Debug\net6.0\Hotel_BAL.deps.json
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\bin\Debug\net6.0\Hotel_BAL.runtimeconfig.json
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\bin\Debug\net6.0\Hotel_BAL.dll
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\bin\Debug\net6.0\Hotel_BAL.pdb
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\bin\Debug\net6.0\Hotel_DAL.dll
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\bin\Debug\net6.0\Hotel_DAL.pdb
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\obj\Debug\net6.0\Hotel_BAL.csproj.AssemblyReference.cache
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\obj\Debug\net6.0\Hotel_BAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\obj\Debug\net6.0\Hotel_BAL.AssemblyInfoInputs.cache
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\obj\Debug\net6.0\Hotel_BAL.AssemblyInfo.cs
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\obj\Debug\net6.0\Hotel_BAL.csproj.CoreCompileInputs.cache
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\obj\Debug\net6.0\Hotel_BAL.csproj.CopyComplete
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\obj\Debug\net6.0\Hotel_BAL.dll
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\obj\Debug\net6.0\refint\Hotel_BAL.dll
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\obj\Debug\net6.0\Hotel_BAL.pdb
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\obj\Debug\net6.0\Hotel_BAL.genruntimeconfig.cache
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_BAL\obj\Debug\net6.0\ref\Hotel_BAL.dll

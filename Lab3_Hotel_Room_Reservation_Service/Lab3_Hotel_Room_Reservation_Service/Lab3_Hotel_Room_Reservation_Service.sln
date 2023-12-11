@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab3_Hotel_Room_Reservation
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel_PL", "..\Hotel_PL\Hotel_PL.csproj", "{75BF9800-F9C0-41A2-B03C-C679558CAD52}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel_PL_Access", "..\Hotel_PL_Access\Hotel_PL_Access.csproj", "{D8468CAD-CE31-4090-9678-E3111E67E207}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel_DAL", "..\Hotel_DAL\Hotel_DAL.csproj", "{0C1A0A7B-F9F3-4490-AEA9-C6E3B0334961}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel_DAL", "..\Hotel_DAL\Hotel_DAL.csproj", "{0C1A0A7B-F9F3-4490-AEA9-C6E3B0334961}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel_BAL", "..\Hotel_BAL\Hotel_BAL.csproj", "{88EFA216-EB5E-4CAB-9CCA-579AEC25F9FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{75BF9800-F9C0-41A2-B03C-C679558CAD52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75BF9800-F9C0-41A2-B03C-C679558CAD52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75BF9800-F9C0-41A2-B03C-C679558CAD52}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D8468CAD-CE31-4090-9678-E3111E67E207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D8468CAD-CE31-4090-9678-E3111E67E207}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D8468CAD-CE31-4090-9678-E3111E67E207}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D8468CAD-CE31-4090-9678-E3111E67E207}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0C1A0A7B-F9F3-4490-AEA9-C6E3B0334961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0C1A0A7B-F9F3-4490-AEA9-C6E3B0334961}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C1A0A7B-F9F3-4490-AEA9-C6E3B0334961}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C1A0A7B-F9F3-4490-AEA9-C6E3B0334961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88EFA216-EB5E-4CAB-9CCA-579AEC25F9FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88EFA216-EB5E-4CAB-9CCA-579AEC25F9FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88EFA216-EB5E-4CAB-9CCA-579AEC25F9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88EFA216-EB5E-4CAB-9CCA-579AEC25F9FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
