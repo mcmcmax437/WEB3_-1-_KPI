@@ -1,2 +1,2 @@
+use hoteldb;
 SELECT * FROM rooms;
-SELECT * FROM bookings;

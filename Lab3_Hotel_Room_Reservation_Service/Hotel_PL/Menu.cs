@@ -42,7 +42,6 @@ namespace Hotel_PL
                     switch (input)
                     {
                         case "1":
-                            // View available rooms and prices
                             ViewAvailableRooms(roomService);
                             break;
                         case "2":
@@ -71,11 +70,8 @@ namespace Hotel_PL
 
      
         public static void ViewAvailableRooms(IRoomService roomService)
-        {
-           
-            var rooms = roomService.GetAllRooms();
-
-           
+        {  
+            var rooms = roomService.GetAllRooms();        
             Console.WriteLine("Available rooms and prices:");
             foreach (var room in rooms)
             {
@@ -86,13 +82,9 @@ namespace Hotel_PL
             }
         }
 
-
         public static void ViewBookedRooms(IBookingService bookingService)
         {
-            // Get all bookings
             var bookings = bookingService.GetAllBookings();
-
-            // Display booking details
             Console.WriteLine("Booked rooms:");
             foreach (var booking in bookings)
             {
@@ -102,20 +94,14 @@ namespace Hotel_PL
 
         public static void BookRoom(IRoomService roomService, IBookingService bookingService)
         {
-            // Get the available rooms and prices
-            var rooms = roomService.GetAllRooms().Where(r => r.Available).ToList();
-
-            // Check if there are any available rooms
+            var rooms = roomService.GetAllRooms().Where(r => r.Available).ToList();         
             if (rooms.Count > 0)
-            {
-                // Display the available rooms and prices
+            {            
                 Console.WriteLine("Available rooms and prices:");
                 foreach (var room in rooms)
                 {
                     Console.WriteLine($"Room {room.Name}, Type: {room.Type}, Price: {room.Price}");
-                }
-
-                // Prompt the user to enter the booking details
+                }          
                 Console.WriteLine("Please enter the room name:");
                 var roomName = Console.ReadLine();
                 Console.WriteLine("Please enter the customer name:");
@@ -124,48 +110,35 @@ namespace Hotel_PL
                 var checkIn = DateTime.Parse(Console.ReadLine());
                 Console.WriteLine("Please enter the check-out date (yyyy-mm-dd):");
                 var checkOut = DateTime.Parse(Console.ReadLine());
-
-                // Validate the input
                 if (checkOut > checkIn && rooms.Any(r => r.Name == roomName))
-                {
-                    // Create a new booking object
+                {            
                     var booking = new Booking
                     {
                         RoomId = rooms.First(r => r.Name == roomName).Id,
                         CustomerName = customerName,
                         CheckIn = checkIn,
                         CheckOut = checkOut
-                    };
-
-                    // Add the booking to the database
+                    };               
                     bookingService.AddBooking(booking);
                     bookingService.Save();
-
-                    // Update the room availability
                     var room = roomService.GetRoomById(booking.RoomId);
                     room.Available = false;
                     roomService.UpdateRoom(room);
                     roomService.Save();
-
-                    // Display the booking confirmation
                     Console.WriteLine("Booking confirmed:");
                     Console.WriteLine($"Room {booking.Room.Name}, Customer: {booking.CustomerName}, Check-in: {booking.CheckIn}, Check-out: {booking.CheckOut}");
                 }
                 else
                 {
-                    // Display the error message
                     Console.WriteLine("Invalid input");
                 }
             }
             else
             {
-                // Display the message that there are no available rooms
                 Console.WriteLine("No rooms available");
             }
         }
-
-
-        
+  
         public static void AddNewRoom(IRoomService roomService)
         {
             Console.WriteLine("Please enter the room details:");
@@ -175,17 +148,14 @@ namespace Hotel_PL
             var roomType = Console.ReadLine();
             Console.WriteLine("Room Price per Night:");
             var roomPrice = decimal.Parse(Console.ReadLine());
-
-         
+    
             var newRoom = new Room
             {
                 Name = roomName,
                 Type = roomType,
                 Price = roomPrice,
                 Available = true
-            };       
-           // var existingRoom = roomService.GetRoomById(newRoom.Id);
-         
+            };                  
                 roomService.AddRoom(newRoom);
                 roomService.Save();
 
@@ -196,19 +166,14 @@ namespace Hotel_PL
         {
             Console.WriteLine("Please enter the booking ID to cancel:");
             var bookingId = int.Parse(Console.ReadLine());
-
-            // Get the booking by ID
             var booking = bookingService.GetBookingById(bookingId);
-
             if (booking != null)
             {
-                // Update the room availability
                 var room = roomService.GetRoomById(booking.RoomId);
                 room.Available = true;
                 roomService.UpdateRoom(room);
                 roomService.Save();
 
-                // Delete the booking from the database
                 bookingService.DeleteBooking(bookingId);
                 bookingService.Save();
 
