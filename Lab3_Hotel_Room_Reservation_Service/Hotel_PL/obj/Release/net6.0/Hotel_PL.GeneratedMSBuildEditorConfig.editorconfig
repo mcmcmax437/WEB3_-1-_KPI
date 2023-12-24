@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Hotel_PL
-build_property.ProjectDir = D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_PL\
+build_property.ProjectDir = D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service\Hotel_PL\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

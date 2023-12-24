@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lab3_Hotel_Room_Reservation_Service\Hotel_BAL\Hotel_BAL.csproj" />
+    <ProjectReference Include="..\Lab3_Hotel_Room_Reservation_Service\Hotel_DAL\Hotel_DAL.csproj" />
+    <ProjectReference Include="..\Lab3_Hotel_Room_Reservation_Service\Hotel_PL\Hotel_PL.csproj" />
+    <ProjectReference Include="..\Lab3_Hotel_Room_Reservation_Service\Lab3_Hotel_Room_Reservation_Service\Lab3_Hotel_Room_Reservation_Service.csproj" />
+  </ItemGroup>
+
+</Project>

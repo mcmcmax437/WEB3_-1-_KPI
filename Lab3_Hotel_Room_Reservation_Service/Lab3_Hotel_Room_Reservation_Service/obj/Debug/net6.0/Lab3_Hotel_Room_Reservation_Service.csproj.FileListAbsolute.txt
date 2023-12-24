@@ -308,3 +308,4 @@ D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service\Lab3_Hotel_Room_Reserva
 D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service\Lab3_Hotel_Room_Reservation_Service\bin\Debug\net6.0\Hotel_DAL.dll
 D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service\Lab3_Hotel_Room_Reservation_Service\bin\Debug\net6.0\Hotel_BAL.pdb
 D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service\Lab3_Hotel_Room_Reservation_Service\bin\Debug\net6.0\Hotel_DAL.pdb
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service\Lab3_Hotel_Room_Reservation_Service\obj\Debug\net6.0\Lab3_Hotel_Room_Reservation_Service.sourcelink.json

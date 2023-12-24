@@ -26,3 +26,4 @@ D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_DA
 D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service – копія\Hotel_DAL\obj\Debug\net6.0\ref\Hotel_DAL.dll
 D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service\Hotel_DAL\bin\Debug\net6.0\Hotel_DAL.runtimeconfig.json
 D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service\Hotel_DAL\obj\Debug\net6.0\Hotel_DAL.genruntimeconfig.cache
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service\Hotel_DAL\obj\Debug\net6.0\Hotel_DAL.sourcelink.json

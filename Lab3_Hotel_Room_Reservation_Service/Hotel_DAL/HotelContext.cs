@@ -11,15 +11,22 @@ namespace Hotel_DAL
 {
     public class HotelContext : DbContext
     {
+        //private const string connectionString = "server=127.0.0.1;user=root;password=Kukimyhund437*;database=HotelDB;port=3306";
 
-  
-        private const string connectionString = "server=127.0.0.1;user=root;password=Kukimyhund437*;database=HotelDB;port=3306";    
         public DbSet<Room> Rooms { get; set; }
         public DbSet<Booking> Bookings { get; set; }
-     
+
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+            if (!optionsBuilder.IsConfigured)
+            {
+
+                string connectionString = "server=127.0.0.1;user=root;password=Kukimyhund437*;database=HotelDB;port=3306";
+
+                optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -27,9 +34,10 @@ namespace Hotel_DAL
             modelBuilder.Entity<Room>().HasData(
                 new Room { Id = 1, Name = "101", Type = "Single", Price = 100, Available = true },
                 new Room { Id = 2, Name = "102", Type = "Double", Price = 150, Available = true },
-                new Room { Id = 3, Name = "103", Type = "Suite", Price = 200, Available = true }               
+                new Room { Id = 3, Name = "103", Type = "Suite", Price = 200, Available = true }
             );
         }
     }
 }
+
 

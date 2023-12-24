@@ -2,6 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\Hotel_DAL",
+    "\\Hotel_DAL\\Models",
     "\\Hotel_PL",
     "\\Lab3_Hotel_Room_Reservation_Service"
   ],

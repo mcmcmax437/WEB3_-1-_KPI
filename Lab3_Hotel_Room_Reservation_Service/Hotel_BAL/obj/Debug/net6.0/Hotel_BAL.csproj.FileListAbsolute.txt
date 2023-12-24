@@ -32,3 +32,4 @@ D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service\Hotel_BAL\obj\Debug\net
 D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service\Hotel_BAL\obj\Debug\net6.0\Hotel_BAL.pdb
 D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service\Hotel_BAL\obj\Debug\net6.0\Hotel_BAL.genruntimeconfig.cache
 D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service\Hotel_BAL\obj\Debug\net6.0\ref\Hotel_BAL.dll
+D:\Labs\WEB3_-1-_KPI\Lab3_Hotel_Room_Reservation_Service\Hotel_BAL\obj\Debug\net6.0\Hotel_BAL.sourcelink.json
