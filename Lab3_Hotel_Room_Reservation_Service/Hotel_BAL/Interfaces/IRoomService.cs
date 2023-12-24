@@ -16,6 +16,6 @@ namespace Hotel_BAL.Interfaces
         void AddRoom(Room room);
 
         void Save();
-        
+        Room GetRoomByNumber(int roomNumber);
     }
 }

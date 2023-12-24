@@ -49,6 +49,11 @@ namespace Hotel_BAL.Interface_Implementation
         {
             bookingRepository.Save();
         }
+
+        public Booking GetBookingByRoomId(int id)
+        {
+            return bookingRepository.GetBookingByRoomId(id);
+        }
     }
 }
 

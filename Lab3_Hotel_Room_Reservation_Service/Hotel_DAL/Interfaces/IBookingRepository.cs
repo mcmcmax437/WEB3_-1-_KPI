@@ -14,6 +14,7 @@ namespace Hotel_DAL.Interfaces
         Booking GetBookingById(int id); 
         void AddBooking(Booking booking); 
         void DeleteBooking(int id); 
-        void Save(); 
+        void Save();
+        Booking GetBookingByRoomId(int id);
     }
 }

@@ -44,6 +44,11 @@ namespace Hotel_DAL.Interface_Imlementation
         {
             context.SaveChanges();
         }
+
+        public Booking GetBookingByRoomId(int id)
+        {
+            return context.Bookings.FirstOrDefault(booking => booking.RoomId == id);
+        }
     }
 }
 

@@ -15,5 +15,6 @@ namespace Hotel_BAL.Interfaces
         void AddBooking(Booking booking); 
         void DeleteBooking(int id); 
         void Save();
+        Booking GetBookingByRoomId(int id);
     }
 }

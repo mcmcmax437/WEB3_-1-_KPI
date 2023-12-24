@@ -186,6 +186,8 @@ namespace Lab4_WebHotel.Controllers
             return RedirectToAction(nameof(ViewAvailableRooms));
         }
 
+        
+
         private bool RoomExists(int id)
         {
             return roomService.GetRoomById(id) != null;

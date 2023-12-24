@@ -19,6 +19,8 @@ true);
 INSERT INTO bookings (RoomId, CustomerName, CheckIn, CheckOut)
 VALUES (2, 'John Smith', '2023-12-24', '2023-12-26');
 
+DELETE FROM rooms
+WHERE id IN (5, 6, 7, 8);
 
 
 select * from bookings;

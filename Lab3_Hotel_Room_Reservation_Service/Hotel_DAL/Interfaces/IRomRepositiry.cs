@@ -13,6 +13,7 @@ namespace Hotel_DAL.Interfaces
         Room GetRoomById(int id); 
         void UpdateRoom(Room room); 
         void AddRoom(Room room);
-        void Save(); 
+        void Save();
+        Room GetRoomByNumber(int roomNumber);
     }
 }

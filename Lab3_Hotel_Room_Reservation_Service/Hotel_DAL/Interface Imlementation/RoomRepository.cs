@@ -45,5 +45,10 @@ namespace Hotel_DAL.Interface_Imlementation
         {
             context.SaveChanges();
         }
+
+        public Room GetRoomByNumber(int roomNumber)
+        {
+            return context.Rooms.FirstOrDefault(room => room.Name == roomNumber.ToString());
+        }
     }
 }

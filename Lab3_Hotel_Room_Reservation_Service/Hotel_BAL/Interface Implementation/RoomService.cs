@@ -56,5 +56,10 @@ namespace Hotel_BAL.Interface_Implementation
         {
             roomRepository.Save();
         }
+
+        public Room GetRoomByNumber(int roomNumber)
+        {
+            return roomRepository.GetRoomByNumber(roomNumber);
+        }
     }
 }
