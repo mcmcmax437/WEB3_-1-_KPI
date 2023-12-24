@@ -76,9 +76,9 @@ namespace Lab4_WebHotel.Controllers
         }
 
         // POST: /Home/BookRoom/
-        [HttpPost]
+        [HttpPost, ActionName("BookRoom")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> BooksRoom(int id, [Bind("Id,RoomId,CustomerName,CheckIn,CheckOut")] Booking booking)
+        public async Task<IActionResult> BookRoom(int id, [Bind("Id,Room,RoomId,CustomerName,CheckIn,CheckOut")] Booking booking)
         {
             if (id != booking.RoomId)
             {
@@ -135,9 +135,9 @@ namespace Lab4_WebHotel.Controllers
         }
 
         // POST: Home/AddNewRoom
-        [HttpPost]
+        [HttpPost, ActionName("AddNewRoom")]
         [ValidateAntiForgeryToken]
-        public IActionResult AddNewRoom([Bind("Id,Name,Price,IsAvailable")] Room room)
+        public IActionResult AddNewRoom([Bind("Id,Name,Price,IsAvailable,Type")] Room room)
         {
             if (ModelState.IsValid)
             {
