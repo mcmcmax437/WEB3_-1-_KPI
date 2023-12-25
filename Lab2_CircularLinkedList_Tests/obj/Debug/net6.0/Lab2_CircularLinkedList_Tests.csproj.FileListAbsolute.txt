@@ -103,3 +103,4 @@ D:\Labs\WEB3_-1-_KPI\Lab2_CircularLinkedList_Tests\bin\Debug\net6.0\Lab1 - Ring 
 D:\Labs\WEB3_-1-_KPI\Lab2_CircularLinkedList_Tests\bin\Debug\net6.0\Lab1 - Ring collection.exe
 D:\Labs\WEB3_-1-_KPI\Lab2_CircularLinkedList_Tests\bin\Debug\net6.0\Lab1 - Ring collection.dll
 D:\Labs\WEB3_-1-_KPI\Lab2_CircularLinkedList_Tests\bin\Debug\net6.0\Lab1 - Ring collection.pdb
+D:\Labs\WEB3_-1-_KPI\Lab2_CircularLinkedList_Tests\obj\Debug\net6.0\Lab2_CircularLinkedList_Tests.sourcelink.json

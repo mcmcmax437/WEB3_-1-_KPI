@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab2_CircularLinkedList_Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99497967b7416525b2b1c927ff73dbc5bb890d82")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab2_CircularLinkedList_Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab2_CircularLinkedList_Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

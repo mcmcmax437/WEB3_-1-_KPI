@@ -16,3 +16,4 @@ D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\obj\Debug\net6.0\ref\Lab1 - Ring col
 D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\bin\Debug\net6.0\nunit.framework.dll
 D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\obj\Debug\net6.0\Lab1 - Ring collection.csproj.CopyComplete
+D:\Labs\WEB3_-1-_KPI\Lab1 - Ring collection\obj\Debug\net6.0\Lab1 - Ring collection.sourcelink.json
